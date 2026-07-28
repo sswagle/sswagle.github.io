@@ -446,3 +446,51 @@ nav a {
     color: #4b5563;
 
 }
+/* =========================
+   Credentials Cards
+========================= */
+
+
+.credential-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 25px;
+
+    margin-top: 30px;
+
+}
+
+
+
+.credential-card {
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+
+}
+
+
+
+.credential-card h3 {
+
+    color: #0b1f3a;
+
+    margin-top: 0;
+
+}
+
+
+
+.credential-card li {
+
+    margin-bottom: 10px;
+
+}
