@@ -1,4 +1,6 @@
-/* General settings */
+/* =========================
+   General Settings
+========================= */
 
 * {
     box-sizing: border-box;
@@ -8,6 +10,7 @@
 body {
 
     margin: 0;
+
     font-family: "Segoe UI", Arial, sans-serif;
 
     background-color: #f7f9fc;
@@ -20,7 +23,10 @@ body {
 
 
 
-/* Header and navigation */
+/* =========================
+   Header & Navigation
+========================= */
+
 
 header {
 
@@ -40,7 +46,7 @@ header {
 
 
 
-.logo h1 {
+header h1 {
 
     margin: 0;
 
@@ -52,19 +58,20 @@ header {
 
 nav a {
 
-    color: #ffffff;
+    color: white;
 
     text-decoration: none;
 
-    margin-left: 30px;
+    margin-left: 25px;
 
     font-size: 16px;
 
     font-weight: 600;
 
-    transition: all 0.3s ease;
+    transition: 0.3s;
 
 }
+
 
 
 nav a:hover {
@@ -74,7 +81,6 @@ nav a:hover {
 }
 
 
-/* Contact button */
 
 nav a:last-child {
 
@@ -89,69 +95,29 @@ nav a:last-child {
 }
 
 
+
 nav a:last-child:hover {
 
     background-color: white;
 
-    color: #0b1f3a;
-
-}
-
-
-
-nav a:hover {
-
-    color: #4ade80;
-
 }
 
 
 
 
 
-/* Main sections */
+/* =========================
+   Hero Section
+========================= */
 
-section {
-
-    padding: 60px 10%;
-
-}
-
-
-
-
-h2 {
-
-    color: #0b1f3a;
-
-    font-size: 32px;
-
-}
-
-
-
-h3 {
-
-    color: #0f766e;
-
-}
-
-
-
-
-
-/* Hero section */
 
 .hero {
 
-    background:
-
-    linear-gradient(
+    background: linear-gradient(
         135deg,
         #0b1f3a,
         #164e63
     );
-
 
     color: white;
 
@@ -165,7 +131,21 @@ h3 {
 
     color: white;
 
-    font-size: 42px;
+    font-size: 45px;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.hero h3 {
+
+    color: #d1fae5;
+
+    font-size: 22px;
+
+    font-weight: 500;
 
 }
 
@@ -173,9 +153,41 @@ h3 {
 
 .hero p {
 
-    font-size: 20px;
+    font-size: 19px;
 
-    max-width: 800px;
+    max-width: 850px;
+
+}
+
+
+
+.hero-button {
+
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 12px 30px;
+
+    background-color: #4ade80;
+
+    color: #0b1f3a;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    border-radius: 25px;
+
+    transition: 0.3s;
+
+}
+
+
+
+.hero-button:hover {
+
+    background-color: white;
 
 }
 
@@ -183,11 +195,51 @@ h3 {
 
 
 
-/* Lists */
+/* =========================
+   Sections
+========================= */
+
+
+section {
+
+    padding: 60px 10%;
+
+}
+
+
+
+section h2 {
+
+    color: #0b1f3a;
+
+    font-size: 34px;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+section h3 {
+
+    color: #0f766e;
+
+    margin-top: 35px;
+
+}
+
+
+
+
+
+/* =========================
+   Lists
+========================= */
+
 
 ul {
 
-    padding-left: 20px;
+    padding-left: 25px;
 
 }
 
@@ -202,7 +254,10 @@ li {
 
 
 
-/* Footer */
+/* =========================
+   Footer
+========================= */
+
 
 footer {
 
@@ -219,7 +274,11 @@ footer {
 
 
 
-/* Mobile design */
+
+/* =========================
+   Mobile Responsive
+========================= */
+
 
 @media(max-width:768px){
 
@@ -231,137 +290,39 @@ header {
 }
 
 
+
 nav {
 
-    margin-top:20px;
+    margin-top: 20px;
 
 }
+
 
 
 nav a {
 
-    display:block;
+    display: block;
 
-    margin:10px;
+    margin: 12px;
 
 }
+
 
 
 .hero h2 {
 
-    font-size:32px;
-
-}
-
-
-}
-.expertise-container {
-
-    display: grid;
-
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-
-    gap: 25px;
-
-    margin-top: 30px;
+    font-size: 32px;
 
 }
 
 
 
-.card {
+.hero h3 {
 
-    background-color: white;
-
-    padding: 25px;
-
-    border-radius: 12px;
-
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-
-    transition: transform 0.3s ease;
+    font-size: 18px;
 
 }
 
 
-
-.card:hover {
-
-    transform: translateY(-5px);
-
-}
-
-
-
-.card h4 {
-
-    color: #0b1f3a;
-
-    font-size: 20px;
-
-    margin-top: 0;
-
-}
-
-
-
-.card p {
-
-    color: #4b5563;
-
-}
-.expertise-container {
-
-    display: grid;
-
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-
-    gap: 25px;
-
-    margin-top: 30px;
-
-}
-
-
-
-.card {
-
-    background-color: white;
-
-    padding: 25px;
-
-    border-radius: 12px;
-
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-
-    transition: transform 0.3s ease;
-
-}
-
-
-
-.card:hover {
-
-    transform: translateY(-5px);
-
-}
-
-
-
-.card h4 {
-
-    color: #0b1f3a;
-
-    font-size: 20px;
-
-    margin-top: 0;
-
-}
-
-
-
-.card p {
-
-    color: #4b5563;
 
 }
