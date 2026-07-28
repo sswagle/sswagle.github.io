@@ -326,3 +326,63 @@ nav a {
 
 
 }
+/* =========================
+   Expertise Cards
+========================= */
+
+
+.expertise-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+    gap: 25px;
+
+    margin-top: 30px;
+
+}
+
+
+
+.expertise-card {
+
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+
+    transition: transform 0.3s ease;
+
+}
+
+
+
+.expertise-card:hover {
+
+    transform: translateY(-8px);
+
+}
+
+
+
+.expertise-card h4 {
+
+    color: #0b1f3a;
+
+    font-size: 20px;
+
+    margin-top: 0;
+
+}
+
+
+
+.expertise-card p {
+
+    color: #4b5563;
+
+}
