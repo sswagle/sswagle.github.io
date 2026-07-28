@@ -52,13 +52,48 @@ header {
 
 nav a {
 
-    color: white;
+    color: #ffffff;
 
     text-decoration: none;
 
-    margin-left: 25px;
+    margin-left: 30px;
 
-    font-weight: 500;
+    font-size: 16px;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+
+}
+
+
+nav a:hover {
+
+    color: #4ade80;
+
+}
+
+
+/* Contact button */
+
+nav a:last-child {
+
+    background-color: #4ade80;
+
+    color: #0b1f3a;
+
+    padding: 10px 18px;
+
+    border-radius: 25px;
+
+}
+
+
+nav a:last-child:hover {
+
+    background-color: white;
+
+    color: #0b1f3a;
 
 }
 
