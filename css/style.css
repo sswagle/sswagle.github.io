@@ -1,291 +1,34 @@
-/* =========================
-   General Settings
-========================= */
-
 * {
-    box-sizing: border-box;
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
 }
 
 
 body {
 
-    margin: 0;
+font-family: Arial, Helvetica, sans-serif;
 
-    font-family: "Segoe UI", Arial, sans-serif;
+color:#1e293b;
 
-    background-color: #f7f9fc;
-
-    color: #1f2937;
-
-    line-height: 1.6;
+background:#f8fafc;
 
 }
 
 
 
-/* =========================
-   Header & Navigation
-========================= */
+/* Navigation */
 
 
 header {
 
-    background-color: #0b1f3a;
+background:#0f172a;
 
-    color: white;
-
-    padding: 20px 8%;
-
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-}
-
-
-
-header h1 {
-
-    margin: 0;
-
-    font-size: 26px;
-
-}
-
-
-
-nav a {
-
-    color: white;
-
-    text-decoration: none;
-
-    margin-left: 25px;
-
-    font-size: 16px;
-
-    font-weight: 600;
-
-    transition: 0.3s;
-
-}
-
-
-
-nav a:hover {
-
-    color: #4ade80;
-
-}
-
-
-
-nav a:last-child {
-
-    background-color: #4ade80;
-
-    color: #0b1f3a;
-
-    padding: 10px 18px;
-
-    border-radius: 25px;
-
-}
-
-
-
-nav a:last-child:hover {
-
-    background-color: white;
-
-}
-
-
-
-
-
-/* =========================
-   Hero Section
-========================= */
-
-
-.hero {
-
-    background: linear-gradient(
-        135deg,
-        #0b1f3a,
-        #164e63
-    );
-
-    color: white;
-
-    padding: 100px 10%;
-
-}
-
-
-
-.hero h2 {
-
-    color: white;
-
-    font-size: 45px;
-
-    margin-bottom: 15px;
-
-}
-
-
-
-.hero h3 {
-
-    color: #d1fae5;
-
-    font-size: 22px;
-
-    font-weight: 500;
-
-}
-
-
-
-.hero p {
-
-    font-size: 19px;
-
-    max-width: 850px;
-
-}
-
-
-
-.hero-button {
-
-    display: inline-block;
-
-    margin-top: 25px;
-
-    padding: 12px 30px;
-
-    background-color: #4ade80;
-
-    color: #0b1f3a;
-
-    text-decoration: none;
-
-    font-weight: 600;
-
-    border-radius: 25px;
-
-    transition: 0.3s;
-
-}
-
-
-
-.hero-button:hover {
-
-    background-color: white;
-
-}
-
-
-
-
-
-/* =========================
-   Sections
-========================= */
-
-
-section {
-
-    padding: 60px 10%;
-
-}
-
-
-
-section h2 {
-
-    color: #0b1f3a;
-
-    font-size: 34px;
-
-    margin-bottom: 25px;
-
-}
-
-
-
-section h3 {
-
-    color: #0f766e;
-
-    margin-top: 35px;
-
-}
-
-
-
-
-
-/* =========================
-   Lists
-========================= */
-
-
-ul {
-
-    padding-left: 25px;
-
-}
-
-
-li {
-
-    margin-bottom: 10px;
-
-}
-
-
-
-
-
-/* =========================
-   Footer
-========================= */
-
-
-footer {
-
-    background-color: #0b1f3a;
-
-    color: white;
-
-    text-align: center;
-
-    padding: 20px;
-
-}
-
-
-
-
-
-/* =========================
-   Mobile Responsive
-========================= */
-
-
-@media(max-width:768px){
-
-
-header {
-
-    flex-direction: column;
+padding:20px 10%;
 
 }
 
@@ -293,7 +36,35 @@ header {
 
 nav {
 
-    margin-top: 20px;
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+}
+
+
+
+.logo {
+
+font-size:28px;
+
+font-weight:bold;
+
+color:white;
+
+}
+
+
+
+nav ul {
+
+display:flex;
+
+list-style:none;
+
+gap:30px;
 
 }
 
@@ -301,225 +72,41 @@ nav {
 
 nav a {
 
-    display: block;
+color:white;
 
-    margin: 12px;
+text-decoration:none;
 
-}
-
-
-
-.hero h2 {
-
-    font-size: 32px;
+font-size:16px;
 
 }
 
 
 
-.hero h3 {
 
-    font-size: 18px;
-
-}
-
-
-
-}
-/* =========================
-   Expertise Cards
-========================= */
-
-
-.expertise-grid {
-
-    display: grid;
-
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-
-    gap: 25px;
-
-    margin-top: 30px;
-
-}
-
-
-
-.expertise-card {
-
-    background-color: white;
-
-    padding: 25px;
-
-    border-radius: 12px;
-
-    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
-
-    transition: transform 0.3s ease;
-
-}
-
-
-
-.expertise-card:hover {
-
-    transform: translateY(-8px);
-
-}
-
-
-
-.expertise-card h4 {
-
-    color: #0b1f3a;
-
-    font-size: 20px;
-
-    margin-top: 0;
-
-}
-
-
-
-.expertise-card p {
-
-    color: #4b5563;
-
-}
-/* =========================
-   Consulting Services Cards
-========================= */
-
-
-.service-grid {
-
-    display: grid;
-
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-
-    gap: 25px;
-
-    margin-top: 30px;
-
-}
-
-
-
-.service-card {
-
-    background-color: white;
-
-    padding: 30px;
-
-    border-left: 5px solid #0f766e;
-
-    border-radius: 10px;
-
-    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
-
-    transition: transform 0.3s ease;
-
-}
-
-
-
-.service-card:hover {
-
-    transform: translateY(-6px);
-
-}
-
-
-
-.service-card h3 {
-
-    color: #0b1f3a;
-
-    margin-top: 0;
-
-}
-
-
-
-.service-card p {
-
-    color: #4b5563;
-
-}
-/* =========================
-   Credentials Cards
-========================= */
-
-
-.credential-grid {
-
-    display: grid;
-
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-
-    gap: 25px;
-
-    margin-top: 30px;
-
-}
-
-
-
-.credential-card {
-
-    background-color: white;
-
-    padding: 30px;
-
-    border-radius: 12px;
-
-    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
-
-}
-
-
-
-.credential-card h3 {
-
-    color: #0b1f3a;
-
-    margin-top: 0;
-
-}
-
-
-
-.credential-card li {
-
-    margin-bottom: 10px;
-
-}
-/* =========================
-   New Hero Design
-========================= */
+/* Hero */
 
 
 .hero {
 
-    background: linear-gradient(135deg, #0b1f3a, #164e63);
+background:linear-gradient(135deg,#0f172a,#164e63);
 
-    color: white;
+color:white;
 
-    padding: 90px 10%;
+padding:100px 10%;
 
 }
 
 
 
-.hero-content {
+.hero-container {
 
-    display: flex;
+display:flex;
 
-    align-items: center;
+align-items:center;
 
-    justify-content: space-between;
+justify-content:space-between;
 
-    gap: 50px;
+gap:60px;
 
 }
 
@@ -527,7 +114,7 @@ nav a {
 
 .hero-text {
 
-    max-width: 700px;
+max-width:650px;
 
 }
 
@@ -535,11 +122,11 @@ nav a {
 
 .hero h1 {
 
-    font-size: 26px;
+font-size:52px;
 
-    color: #d1fae5;
+line-height:1.2;
 
-    margin-bottom: 10px;
+margin-bottom:20px;
 
 }
 
@@ -547,23 +134,11 @@ nav a {
 
 .hero h2 {
 
-    font-size: 48px;
+font-size:28px;
 
-    color: white;
+color:#6ee7b7;
 
-    margin-bottom: 20px;
-
-}
-
-
-
-.hero-subtitle {
-
-    font-size: 22px;
-
-    color: #4ade80;
-
-    font-weight: 600;
+margin-bottom:25px;
 
 }
 
@@ -571,17 +146,46 @@ nav a {
 
 .hero p {
 
-    font-size: 18px;
+font-size:20px;
 
-    line-height: 1.7;
+line-height:1.7;
 
 }
 
 
 
-.hero-buttons {
 
-    margin-top: 30px;
+
+.buttons {
+
+margin-top:35px;
+
+}
+
+
+
+.primary-button,
+.secondary-button {
+
+display:inline-block;
+
+padding:14px 30px;
+
+border-radius:30px;
+
+text-decoration:none;
+
+margin-right:15px;
+
+}
+
+
+
+.primary-button {
+
+background:#10b981;
+
+color:white;
 
 }
 
@@ -589,31 +193,9 @@ nav a {
 
 .secondary-button {
 
-    display: inline-block;
+border:2px solid white;
 
-    margin-left: 15px;
-
-    padding: 12px 30px;
-
-    border: 2px solid white;
-
-    color: white;
-
-    text-decoration: none;
-
-    border-radius: 25px;
-
-    transition: 0.3s;
-
-}
-
-
-
-.secondary-button:hover {
-
-    background: white;
-
-    color: #0b1f3a;
+color:white;
 
 }
 
@@ -621,70 +203,127 @@ nav a {
 
 
 
-.hero-image {
-
-    display: flex;
-
-    justify-content: center;
-
-}
+/* Technology Visual */
 
 
+.hero-visual {
 
-.technology-circle {
+display:flex;
 
-    width: 260px;
-
-    height: 260px;
-
-    border-radius: 50%;
-
-    background: rgba(255,255,255,0.1);
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    text-align: center;
-
-    font-size: 24px;
-
-    line-height: 1.8;
-
-    border: 2px solid rgba(255,255,255,0.3);
+justify-content:center;
 
 }
 
 
 
+.technology-orbit {
 
+width:300px;
 
-@media(max-width:768px){
+height:300px;
 
+border-radius:50%;
 
-.hero-content {
+background:rgba(255,255,255,0.1);
 
-    flex-direction: column;
+border:1px solid rgba(255,255,255,0.4);
 
-    text-align: center;
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:24px;
+
+line-height:1.8;
 
 }
 
 
-.hero h2 {
 
-    font-size: 34px;
+/* Statistics */
+
+
+.stats {
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+
+gap:30px;
+
+padding:60px 10%;
+
+text-align:center;
+
+background:white;
 
 }
 
 
-.secondary-button {
 
-    margin-left:0;
+.stats h2 {
 
-    margin-top:15px;
+font-size:40px;
+
+color:#0f766e;
+
+}
+
+
+
+.stats p {
+
+margin-top:10px;
+
+}
+
+
+
+/* Footer */
+
+
+footer {
+
+background:#0f172a;
+
+color:white;
+
+text-align:center;
+
+padding:25px;
+
+}
+
+
+
+
+
+@media(max-width:800px){
+
+
+.hero-container {
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+
+.hero h1 {
+
+font-size:36px;
+
+}
+
+
+nav ul {
+
+display:none;
 
 }
 
