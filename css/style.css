@@ -1,40 +1,23 @@
-* {
-
-margin:0;
-
-padding:0;
-
-box-sizing:border-box;
-
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 
-body {
+body{
 
-font-family: Arial, Helvetica, sans-serif;
+font-family:"Segoe UI", Arial, sans-serif;
 
-color:#1e293b;
+color:#0f172a;
 
-background:#f8fafc;
+background:#ffffff;
 
 }
 
 
 
-/* Navigation */
-
-
-header {
-
-background:#0f172a;
-
-padding:20px 10%;
-
-}
-
-
-
-nav {
+.navbar{
 
 display:flex;
 
@@ -42,63 +25,68 @@ justify-content:space-between;
 
 align-items:center;
 
-}
+padding:25px 10%;
 
-
-
-.logo {
-
-font-size:28px;
-
-font-weight:bold;
-
-color:white;
+background:white;
 
 }
 
 
 
-nav ul {
+.logo{
 
-display:flex;
+font-size:32px;
 
-list-style:none;
+font-weight:700;
 
-gap:30px;
+color:#2563eb;
 
 }
 
 
 
-nav a {
+nav a{
 
-color:white;
+margin-left:30px;
 
 text-decoration:none;
 
-font-size:16px;
+color:#334155;
+
+font-weight:500;
+
+}
+
+
+
+nav a:hover{
+
+color:#2563eb;
 
 }
 
 
 
 
-/* Hero */
+/* HERO */
 
 
-.hero {
+.hero{
 
-background:linear-gradient(135deg,#0f172a,#164e63);
+padding:90px 10%;
 
-color:white;
-
-padding:100px 10%;
+background:
+linear-gradient(
+120deg,
+#ffffff,
+#eff6ff
+);
 
 }
 
 
 
-.hero-container {
+.hero-container{
 
 display:flex;
 
@@ -112,19 +100,21 @@ gap:60px;
 
 
 
-.hero-text {
+.hero-content{
 
-max-width:650px;
+max-width:750px;
 
 }
 
 
 
-.hero h1 {
+.intro{
 
-font-size:52px;
+font-size:22px;
 
-line-height:1.2;
+font-weight:600;
+
+color:#2563eb;
 
 margin-bottom:20px;
 
@@ -132,11 +122,11 @@ margin-bottom:20px;
 
 
 
-.hero h2 {
+.hero h1{
 
-font-size:28px;
+font-size:48px;
 
-color:#6ee7b7;
+line-height:1.2;
 
 margin-bottom:25px;
 
@@ -144,28 +134,62 @@ margin-bottom:25px;
 
 
 
-.hero p {
+.hero-description{
 
 font-size:20px;
 
 line-height:1.7;
 
+color:#475569;
+
+}
+
+
+
+
+
+.technology-tags{
+
+margin-top:30px;
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:12px;
+
+}
+
+
+
+.technology-tags span{
+
+background:#e0f2fe;
+
+padding:8px 15px;
+
+border-radius:20px;
+
+font-size:14px;
+
+color:#0369a1;
+
 }
 
 
 
 
 
-.buttons {
+.hero-buttons{
 
-margin-top:35px;
+margin-top:40px;
 
 }
 
 
 
-.primary-button,
-.secondary-button {
+.primary-btn,
+.secondary-btn{
 
 display:inline-block;
 
@@ -181,9 +205,9 @@ margin-right:15px;
 
 
 
-.primary-button {
+.primary-btn{
 
-background:#10b981;
+background:#2563eb;
 
 color:white;
 
@@ -191,11 +215,11 @@ color:white;
 
 
 
-.secondary-button {
+.secondary-btn{
 
-border:2px solid white;
+border:2px solid #2563eb;
 
-color:white;
+color:#2563eb;
 
 }
 
@@ -206,37 +230,70 @@ color:white;
 /* Technology Visual */
 
 
-.hero-visual {
+.tech-visual{
 
-display:flex;
+width:330px;
 
-justify-content:center;
-
-}
-
-
-
-.technology-orbit {
-
-width:300px;
-
-height:300px;
+height:330px;
 
 border-radius:50%;
 
-background:rgba(255,255,255,0.1);
+position:relative;
 
-border:1px solid rgba(255,255,255,0.4);
+background:
+radial-gradient(circle,#dbeafe,#ffffff);
 
 display:flex;
-
-flex-direction:column;
 
 justify-content:center;
 
 align-items:center;
 
-font-size:24px;
+}
+
+
+
+.circle{
+
+position:absolute;
+
+border-radius:50%;
+
+border:1px solid #93c5fd;
+
+}
+
+
+
+.circle1{
+
+width:250px;
+
+height:250px;
+
+}
+
+
+
+.circle2{
+
+width:180px;
+
+height:180px;
+
+}
+
+
+
+.tech-text{
+
+text-align:center;
+
+font-size:22px;
+
+font-weight:600;
+
+color:#2563eb;
 
 line-height:1.8;
 
@@ -244,10 +301,12 @@ line-height:1.8;
 
 
 
-/* Statistics */
 
 
-.stats {
+/* TRUST */
+
+
+.trust{
 
 display:grid;
 
@@ -259,42 +318,25 @@ padding:60px 10%;
 
 text-align:center;
 
-background:white;
+}
+
+
+
+.trust strong{
+
+display:block;
+
+font-size:35px;
+
+color:#059669;
 
 }
 
 
 
-.stats h2 {
+.trust span{
 
-font-size:40px;
-
-color:#0f766e;
-
-}
-
-
-
-.stats p {
-
-margin-top:10px;
-
-}
-
-
-
-/* Footer */
-
-
-footer {
-
-background:#0f172a;
-
-color:white;
-
-text-align:center;
-
-padding:25px;
+color:#475569;
 
 }
 
@@ -302,10 +344,9 @@ padding:25px;
 
 
 
-@media(max-width:800px){
+@media(max-width:900px){
 
-
-.hero-container {
+.hero-container{
 
 flex-direction:column;
 
@@ -314,14 +355,14 @@ text-align:center;
 }
 
 
-.hero h1 {
+.hero h1{
 
 font-size:36px;
 
 }
 
 
-nav ul {
+nav{
 
 display:none;
 
