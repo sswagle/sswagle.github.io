@@ -8,32 +8,25 @@ Main Stylesheet
 Global Settings
 ========================================= */
 
-{
+:root {
 
---dark-blue: #0F172A;
-
---technology-blue: #2563EB;
-
---green: #059669;
-
---light-background: #F8FAFC;
-
---text-color: #334155;
-
---white: #ffffff;
+    --dark-blue: #0F172A;
+    --technology-blue: #2563EB;
+    --green: #059669;
+    --light-background: #F8FAFC;
+    --text-color: #334155;
+    --white: #ffffff;
 
 }
 
 
 
 
-{
+* {
 
-margin: 0;
-
-padding: 0;
-
-box-sizing: border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 
 }
 
@@ -145,12 +138,9 @@ transition: 0.3s;
 
 
 
-.nav-links a {
-
-color: var(--technology-blue);
-
+.nav-links a:hover {
+    color: var(--technology-blue);
 }
-
 
 
 
@@ -254,10 +244,8 @@ color: white;
 
 
 
-.primary {
-
-transform: translateY(-3px);
-
+.primary:hover {
+    transform: translateY(-3px);
 }
 
 
@@ -274,12 +262,9 @@ color: var(--technology-blue);
 
 
 
-.secondary {
-
-background: var(--technology-blue);
-
-color: white;
-
+.secondary:hover {
+    background: var(--technology-blue);
+    color:white;
 }
 
 
@@ -350,7 +335,7 @@ padding: 90px 40px;
 
 
 
-.section(even) {
+.section:nth-child(even) {
 
 background: var(--light-background);
 
@@ -427,10 +412,8 @@ transition: 0.3s;
 
 
 
-.card {
-
-transform: translateY(-8px);
-
+.card:hover {
+    transform: translateY(-8px);
 }
 
 
@@ -632,14 +615,25 @@ grid-template-columns:1fr;
 Scroll Animation
 ========================================= */
 
-.card,
+.card {
+
+    opacity:0;
+    transform:translateY(30px);
+    transition:all .8s ease;
+
+}
+
 .section {
 
-opacity:0;
+    opacity:1;
+    transform:none;
 
-transform:translateY(30px);
+}
 
-transition:all 0.8s ease;
+.visible {
+
+    opacity:1;
+    transform:translateY(0);
 
 }
 
@@ -714,8 +708,6 @@ font-weight:600;
 
 
 
-.card a {
-
-text-decoration:underline;
-
+.card a:hover {
+    text-decoration:underline;
 }
