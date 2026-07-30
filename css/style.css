@@ -711,3 +711,49 @@ font-weight:600;
 .card a:hover {
     text-decoration:underline;
 }
+/* =========================================
+Article Pages
+========================================= */
+
+.article {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.article h1 {
+    font-size: 3rem;
+    color: var(--dark-blue);
+    margin-bottom: 20px;
+}
+
+.article h2 {
+    font-size: 1.8rem;
+    color: var(--dark-blue);
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.article p {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+.article ul {
+    margin: 20px 0 30px 25px;
+}
+
+.article li {
+    margin-bottom: 12px;
+}
+
+.article a {
+    color: var(--technology-blue);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.article a:hover {
+    text-decoration: underline;
+}
