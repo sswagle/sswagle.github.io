@@ -97,9 +97,9 @@ align-items: center;
 
 
 
-.logo {
-
-font-size: 1.3rem;
+.logo a {
+    color: inherit;
+}
 
 font-weight: 700;
 
