@@ -1,10 +1,53 @@
-console.log("Website loaded successfully");
-.hero-image img{
+/*
 
-width:420px;
+*/
 
-max-width:100%;
+// Smooth scrolling for navigation links
 
-filter:drop-shadow(0 20px 40px rgba(0,0,0,0.15));
+document.querySelectorAll('a[href^="#"]').forEach(link => {
 
-}
+link.addEventListener("click", function(e){
+
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute("href"))
+    .scrollIntoView({
+
+        behavior: "smooth"
+
+    });
+
+});
+
+});
+
+
+
+
+// Fade-in animation while scrolling
+
+const observer = new IntersectionObserver((entries)=>{
+
+entries.forEach(entry=>{
+
+
+    if(entry.isIntersecting){
+
+        entry.target.classList.add("visible");
+
+    }
+
+
+});
+
+});
+
+
+
+
+document.querySelectorAll(".card, .section")
+.forEach((element)=>{
+
+observer.observe(element);
+
+});
