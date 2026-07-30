@@ -653,3 +653,69 @@ opacity:1;
 transform:translateY(0);
 
 }
+/* =========================================
+Insights Page
+========================================= */
+
+.logo a {
+
+text-decoration:none;
+color:inherit;
+
+}
+
+
+
+
+.page-title {
+
+text-align:center;
+
+font-size:3rem;
+
+color:var(--dark-blue);
+
+margin-bottom:20px;
+
+}
+
+
+
+
+.intro-text {
+
+text-align:center;
+
+max-width:800px;
+
+margin:0 auto 50px;
+
+font-size:1.2rem;
+
+}
+
+
+
+
+.card a {
+
+display:inline-block;
+
+margin-top:15px;
+
+color:var(--technology-blue);
+
+text-decoration:none;
+
+font-weight:600;
+
+}
+
+
+
+
+.card a {
+
+text-decoration:underline;
+
+}
