@@ -98,13 +98,9 @@ align-items: center;
 
 
 .logo a {
-    color: inherit;
-}
-
-font-weight: 700;
-
-color: var(--dark-blue);
-
+    font-weight: 700;
+    color: var(--dark-blue);
+    text-decoration: none;
 }
 
 
